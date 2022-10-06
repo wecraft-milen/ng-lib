@@ -1,0 +1,43 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "cli": {
+    "cache": {
+      "enabled": false
+    }
+  },
+  "projects": {
+    "super-button": {
+      "projectType": "library",
+      "root": "projects/super-button",
+      "sourceRoot": "projects/super-button/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/super-button/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/super-button/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/super-button/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/super-button/src/test.ts",
+            "tsConfig": "projects/super-button/tsconfig.spec.json",
+            "karmaConfig": "projects/super-button/karma.conf.js"
+          }
+        }
+      }
+    }
+  }
+}
