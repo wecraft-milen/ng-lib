@@ -1,5 +1,5 @@
 {
-  "name": "ng-lib",
+  "name": "y",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -38,5 +38,17 @@
     "ng-packagr": "^14.2.1",
     "ngx-build-plus": "^14.0.0",
     "typescript": "~4.6.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wecraft-milen/ng-lib.git"
+  },
+  "author": {
+    "email": "m.ivanov@email.com",
+    "name": "Milen Ivanov"
+  },
+  "bugs": {
+    "url": "https://github.com/wecraft-milen/ng-lib/issues"
+  },
+  "homepage": "https://github.com/wecraft-milen/ng-lib#readme"
 }
